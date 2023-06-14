@@ -1,0 +1,230 @@
+html, body {
+    background: #0A0A0A;
+    font-family: 'Montserrat', sans-serif;
+    height: 80vh;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #181818;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #d4d4d4;
+    border-radius: 5px; 
+}
+
+header {
+    background-color: #161616;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border-radius: 11px;
+    box-shadow: 0px 0px 4px #000000;
+    border: 1px solid #222222;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+  
+.navigation-logo {
+    margin-right: 10px;
+    margin-top: 5px;
+}
+  
+.navigation-logo img {
+    height: 40px;
+}
+  
+.navigation-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+  
+.navigation-menu ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+  
+.navigation-menu ul li:last-child {
+    margin-right: 0;
+}
+  
+.navigation-menu ul li a {
+    color: #e2e2e2;
+    text-decoration: none;
+    padding: 4px;
+}
+  
+.navigation-menu ul li a:hover {
+    color: #dadada;
+}
+  
+.block-info {
+    position: relative;
+    width: 827px;
+    margin: 0 auto;
+    top: 270px;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+  
+.main-text-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 651px;
+    height: 60px;
+    margin: 0 auto;
+}
+  
+.version-text {
+    background-color: rgb(233, 233, 233);
+    padding: 0 10px;
+    width: 134px;
+    font-size: 46px;
+    border-radius: 11px;
+    box-shadow: 0px 0px 4px #000000;
+}
+  
+.name-project-text {
+    margin-left: 10px;
+    color: #e2e2e2;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+}
+  
+.dop-info-block {
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.info-text {
+    position: relative;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 29px;
+    height: 69px;
+    bottom: 11px;
+    color: #bdbdbd;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+  
+.button {
+    padding: 10px 70px;
+    font-size: 23px;
+    background-color: #e2e2e2;
+    color: #333333;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+    box-shadow: 0px 0px 4px #000000;
+    margin-top: 30px;
+    transition: transform 0.3s ease;
+}
+  
+.button:hover {
+    transform: scale(1.1);
+}
+  
+.image-icnvfdg-dfivnidb {
+    position: relative;
+    right: 190px;
+    bottom: 20px;
+    margin: 0; /* Добавлено */
+}
+  
+.image-icnvfdg-dfivnidb-gjfifb {
+    position: relative;
+    left: 190px;
+    bottom: 93px;
+    margin: 0; /* Добавлено */
+}
+  
+.land-text {
+    position: relative;
+    font-size: 16px;
+    right: 223px;
+    width: 187px;
+    bottom: 100px;
+    color: #575757;
+    text-align: center;
+    margin: 0; /* Добавлено */
+}
+  
+.land-text-dop {
+    position: relative;
+    font-size: 16px;
+    left: 225px;
+    width: 187px;
+    bottom: 172px;
+    color: #575757;
+    text-align: center;
+    margin: 0; /* Добавлено */
+}
+
+.dpopup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px #000000;
+    padding: 20px;
+    max-width: 700px;
+    z-index: 9999;
+}
+  
+.popup-content {
+    text-align: center;
+}
+  
+.popup-content p {
+    margin-bottom: 10px;
+}
+  
+#news-close-button,
+#support-close-button {
+    background-color: #ccc;
+    border: none;
+    margin-top: 5px;
+    padding: 10px 60px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#news-close-button:hover,
+#support-close-button:hover {
+  background-color: #272727;
+  color: #d4d4d4;
+}
+  
+@keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+  
